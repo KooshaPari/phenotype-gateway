@@ -15,12 +15,12 @@ Governance SSOT: [ADR-ECO-007](https://github.com/KooshaPari/phenotype-registry/
 
 ## Submodule pins (`third_party/`)
 
-Pinned at Wave H6 follow-up (2026-06-18). Update via `git submodule update --remote` only after interim canonical `main` gates pass.
+Pinned at Wave H13 router promotion (2026-06-18). Update via `git submodule update --remote` only after interim canonical `main` gates pass.
 
 | Submodule | Commit SHA | Notes |
 |-----------|------------|-------|
 | `third_party/agentapi-plusplus` | `78987040ad2112a9142b9407cfd468c984ae253a` | Post H2 branch superset (#531) |
-| `third_party/cliproxyapi-plusplus` | `866ca6dd49f7ba72c0e1349a235df4137b4e890c` | Post H3 vibeproxy absorption (#1024) |
+| `third_party/cliproxyapi-plusplus` | `03d976df977b895ad66434baa1bce302c9040765` | go.mod merge fix (#1027) |
 | `third_party/bifrost` | `fdca125796d281c17d219acd059f2ea4433cc4cc` | G17 vendor pin `phenotype/vendor-2026-06` (bifrost#7) |
 | `third_party/argis-extensions` | `2fe3f952d9a898bbad570a6856487333fb0deaae` | Plugin plane classification (H5) |
 

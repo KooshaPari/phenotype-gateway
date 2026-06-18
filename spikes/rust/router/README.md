@@ -15,4 +15,4 @@ Replace OmniRoute interim TS router with non-sloppy Rust (or Zig) implementation
 
 ## Status
 
-`spikes/rust/router/` — scaffold only; implementation TBD.
+`spikes/rust/router/` — **H13 scaffold**: `Cargo.toml`, `RouterPlane` trait sketch, unit test.
