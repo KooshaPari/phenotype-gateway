@@ -10,9 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Verify scaffold layout
         run: |
           test -f docs/SPEC.md
           test -f docs/UPSTREAM.md
           test -d spikes/go
           test -d packages
+          test -f .gitmodules
+          test -d third_party/agentapi-plusplus
+          test -d third_party/cliproxyapi-plusplus
+          test -d third_party/bifrost
+          test -d third_party/argis-extensions
