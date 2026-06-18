@@ -1,6 +1,6 @@
 # Go spike — CLI subscription proxy
 
-Fork baseline: `third_party/cliproxyapi-plusplus` @ `866ca6dd`
+Fork baseline: `third_party/cliproxyapi-plusplus` @ `f156c0b2`
 
 ## Goal
 
@@ -10,7 +10,7 @@ Validate OpenAI-compatible `/v1/*` proxy surface; vibeproxy client absorbed per 
 
 | Command | Result | Notes |
 |---------|--------|-------|
-| `go build ./...` | **fail** | `go.mod` has unresolved merge conflict markers at pin `866ca6dd` |
+| `go build ./...` | **pass** | go.sum conflict resolved in cliproxyapi-plusplus#1030 |
 
 ## Commands
 

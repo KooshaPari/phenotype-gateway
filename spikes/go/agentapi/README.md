@@ -1,6 +1,6 @@
 # Go spike — agent terminal API
 
-Fork baseline: `third_party/agentapi-plusplus` @ `7898704`
+Fork baseline: `third_party/agentapi-plusplus` @ `5809a2e`
 
 ## Goal
 
@@ -18,7 +18,7 @@ go test ./...
 
 | Command | Result | Notes |
 |---------|--------|-------|
-| `go build ./...` | **fail** | `x/acpio`: `*ACPConversation` missing `ClearMessages` — does not implement `screentracker.Conversation` |
+| `go build ./...` | **pass** | Fixed in agentapi-plusplus#539 (ClearMessages + httpapi repair) |
 
 ## Promotion
 

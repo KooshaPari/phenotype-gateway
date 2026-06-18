@@ -1,6 +1,6 @@
 # Go spike — argis plugin plane
 
-Fork baseline: `third_party/argis-extensions` @ `2fe3f952`
+Fork baseline: `third_party/argis-extensions` @ `0419dcf`
 
 ## Goal
 
@@ -10,7 +10,7 @@ Plugin/routing/SLM extensions POC before `packages/argis` absorption.
 
 | Command | Result | Notes |
 |---------|--------|-------|
-| `go build ./...` | **fail** | missing `github.com/kooshapari/bifrost-extensions/api/graphql/gen`; hatchet module fetch error |
+| `go build ./...` | **pass** | graphql/gen committed in argis-extensions#82 |
 
 ## Commands
 
