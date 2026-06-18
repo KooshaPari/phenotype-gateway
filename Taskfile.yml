@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  smoke:
+    desc: Run Go build smoke on all third_party planes
+    cmds:
+      - pwsh -NoProfile -File scripts/smoke-go.ps1
+
+  smoke:sh:
+    desc: Run Go build smoke (bash, for Linux/CI parity)
+    cmds:
+      - bash scripts/smoke-go.sh

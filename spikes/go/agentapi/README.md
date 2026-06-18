@@ -14,6 +14,12 @@ go build ./...
 go test ./...
 ```
 
+## Smoke (2026-06-18)
+
+| Command | Result | Notes |
+|---------|--------|-------|
+| `go build ./...` | **fail** | `x/acpio`: `*ACPConversation` missing `ClearMessages` — does not implement `screentracker.Conversation` |
+
 ## Promotion
 
 Pass checklist in phenotype-registry `GATEWAY_FEATURE_PARITY.md`.
