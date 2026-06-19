@@ -14,6 +14,26 @@ $planes = @(
     @{ Name = "bifrost-transports"; Path = "third_party/bifrost"; BuildPath = "transports" }
 )
 
+function Ensure-BifrostTransportsReplaces {
+    param([string]$BuildDir)
+    $gomod = Join-Path $BuildDir "go.mod"
+    if (-not (Test-Path $gomod)) { return }
+    $content = Get-Content $gomod -Raw
+    if ($content -match '(?m)^replace github\.com/maximhq/bifrost/core =>') { return }
+    @"
+
+replace github.com/maximhq/bifrost/core => ../core
+replace github.com/maximhq/bifrost/framework => ../framework
+replace github.com/maximhq/bifrost/plugins/governance => ../plugins/governance
+replace github.com/maximhq/bifrost/plugins/compat => ../plugins/compat
+replace github.com/maximhq/bifrost/plugins/logging => ../plugins/logging
+replace github.com/maximhq/bifrost/plugins/maxim => ../plugins/maxim
+replace github.com/maximhq/bifrost/plugins/otel => ../plugins/otel
+replace github.com/maximhq/bifrost/plugins/semanticcache => ../plugins/semanticcache
+replace github.com/maximhq/bifrost/plugins/telemetry => ../plugins/telemetry
+"@ | Add-Content -Path $gomod
+}
+
 $failed = @()
 foreach ($plane in $planes) {
     $dir = Join-Path $Root $plane.Path
@@ -27,6 +47,9 @@ foreach ($plane in $planes) {
     if (-not (Test-Path $gomod)) {
         Write-Host "SKIP $($plane.Name): no go.mod in $($plane.BuildPath)"
         continue
+    }
+    if ($plane.Name -eq "bifrost-transports") {
+        Ensure-BifrostTransportsReplaces -BuildDir $buildDir
     }
     Write-Host "==> smoke $($plane.Name) ($buildDir)"
     Push-Location $buildDir

@@ -1,16 +1,16 @@
 # Go spike — enterprise gateway
 
-Fork baseline: `third_party/bifrost` @ `f9cec7bb`
+Fork baseline: `third_party/bifrost` @ `9c0d904`
 
 ## Goal
 
 Vendor-fork smoke test; local deltas on `feat/bifrost-local-delta` only.
 
-## Smoke (2026-06-18)
+## Smoke (2026-06-19)
 
 | Command | Result | Notes |
 |---------|--------|-------|
-| `go build ./...` | **pass** (vacuous) | Root has no Go packages at pin `f9cec7bb`; vendor tag + local-delta build TBD |
+| `go build ./...` in `transports/` | **pass** (Linux CI) | UI embed stub bifrost#9; monorepo replaces bifrost#10 (MCPExternal* fields) |
 
 ## Commands
 

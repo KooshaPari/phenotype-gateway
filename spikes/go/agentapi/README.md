@@ -1,6 +1,6 @@
 # Go spike — agent terminal API
 
-Fork baseline: `third_party/agentapi-plusplus` @ `5809a2e`
+Fork baseline: `third_party/agentapi-plusplus` @ `5ae7736`
 
 ## Goal
 
@@ -18,7 +18,7 @@ go test ./...
 
 | Command | Result | Notes |
 |---------|--------|-------|
-| `go build ./...` | **pass** | Fixed in agentapi-plusplus#539 (ClearMessages + httpapi repair) |
+| `go build ./...` | **pass** | Fixed in agentapi-plusplus#540 (ClearMessages + httpapi repair) |
 
 ## Promotion
 
