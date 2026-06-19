@@ -23,7 +23,7 @@ OmniRoute implements **14 routing strategies** with **Auto-combo 9-factor scorin
 1. Virtual combo built in-memory per request (no DB persistence for interim path)
 2. Multi-account aware: each provider connection is a candidate
 3. Session stickiness via LKGP (last-known-good provider)
-4. OpenAI-compatible `/v1/chat/completions` entry — delegate provider HTTP to cliproxy++ plane
+4. OpenAI-compatible `/v1/chat/completions` entry — delegate provider HTTP to cliproxy++ plane (`spikes/rust/router/src/delegate.rs`)
 5. Scoring factors port to Rust (`spikes/rust/router`) or Mojo experiment lane
 
 ## Non-goals (defer)

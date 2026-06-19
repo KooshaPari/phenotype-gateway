@@ -1,6 +1,8 @@
 //! Router plane trait sketch — Wave H13/H10 spike.
 //! HTTP `/v1/*` delegates to cliproxy++ (Go); combo logic stays here.
 
+pub mod delegate;
+
 /// Routing strategy for auto-combo variants (subset of OmniRoute spec).
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum ComboVariant {
