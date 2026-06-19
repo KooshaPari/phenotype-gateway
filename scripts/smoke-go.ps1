@@ -12,6 +12,8 @@ $planes = @(
     @{ Name = "cliproxyapi-plusplus"; Path = "third_party/cliproxyapi-plusplus"; BuildPath = "." },
     @{ Name = "cliproxy-package"; Path = "packages/cliproxy"; BuildPath = "." },
     @{ Name = "agentapi-package"; Path = "packages/agentapi"; BuildPath = "." },
+    @{ Name = "bifrost-package"; Path = "packages/bifrost"; BuildPath = "." },
+    @{ Name = "argis-package"; Path = "packages/argis"; BuildPath = "." },
     @{ Name = "argis-extensions"; Path = "third_party/argis-extensions"; BuildPath = "." },
     @{ Name = "bifrost-transports"; Path = "third_party/bifrost"; BuildPath = "transports" }
 )
