@@ -12,8 +12,8 @@ Per [ADR-ECO-014](https://github.com/KooshaPari/phenotype-registry/blob/main/doc
 
 ## Order (recommended)
 
-1. cliproxy++ (proxy surface)
-2. agentapi++ (after interface fix)
+1. cliproxy++ (proxy surface) — **H10 anchor** (`packages/cliproxy`)
+2. agentapi++ — **H10 anchor** (`packages/agentapi`)
 3. bifrost (post vendor delta)
 4. argis (plugin inventory + bifrost-extensions dep)
 5. router (Rust revamp — last)

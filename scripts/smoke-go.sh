@@ -46,6 +46,8 @@ smoke() {
 
 smoke agentapi-plusplus third_party/agentapi-plusplus .
 smoke cliproxyapi-plusplus third_party/cliproxyapi-plusplus .
+smoke cliproxy-package packages/cliproxy .
+smoke agentapi-package packages/agentapi .
 smoke argis-extensions third_party/argis-extensions .
 smoke bifrost-transports third_party/bifrost transports
 

@@ -10,6 +10,8 @@ $env:GOPROXY = if ($env:GOPROXY) { $env:GOPROXY } else { "https://proxy.golang.o
 $planes = @(
     @{ Name = "agentapi-plusplus"; Path = "third_party/agentapi-plusplus"; BuildPath = "." },
     @{ Name = "cliproxyapi-plusplus"; Path = "third_party/cliproxyapi-plusplus"; BuildPath = "." },
+    @{ Name = "cliproxy-package"; Path = "packages/cliproxy"; BuildPath = "." },
+    @{ Name = "agentapi-package"; Path = "packages/agentapi"; BuildPath = "." },
     @{ Name = "argis-extensions"; Path = "third_party/argis-extensions"; BuildPath = "." },
     @{ Name = "bifrost-transports"; Path = "third_party/bifrost"; BuildPath = "transports" }
 )
