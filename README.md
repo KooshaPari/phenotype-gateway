@@ -30,3 +30,12 @@ Canonical domain owner for agent API, LLM proxy, enterprise gateway, and router 
 ## Promotion rule
 
 Submodule → `packages/<name>` when component passes checklist in `GATEWAY_FEATURE_PARITY.md`.
+
+## Local development (H9 smoke)
+
+| Platform | `go build ./...` (cliproxy submodule) | Notes |
+|----------|---------------------------------------|-------|
+| Linux / macOS | pass | Unix socket umask via `//go:build unix` |
+| Windows | pass | `umask_other.go` no-op stub (`cliproxyapi-plusplus#1033`) |
+
+Run smoke: `./scripts/smoke-go.sh` (Linux/macOS) or `./scripts/smoke-go.ps1` (Windows).
