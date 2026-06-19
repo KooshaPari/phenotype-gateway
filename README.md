@@ -14,6 +14,8 @@ Canonical domain owner for agent API, LLM proxy, enterprise gateway, and router 
 | `packages/` | Full absorption targets (promoted from submodules) |
 | `spikes/go/` | Go-native stack experiments |
 | `spikes/rust/` | Router / substrate spikes |
+| `spikes/rust/router/` | H13: Rust router (OmniRoute successor) |
+| `spikes/rust/capacity/` | H14+: capacity math (absorbed from pheno-capacity v0.2.0, L5-117) |
 | `spikes/zig/` | Performance-critical paths |
 | `spikes/mojo/` | Optional numeric/ML paths |
 
