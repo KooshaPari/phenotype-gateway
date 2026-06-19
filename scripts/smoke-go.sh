@@ -13,8 +13,7 @@ smoke() {
     return 0
   fi
   echo "==> smoke $name ($dir)"
-  if (cd "$dir" && go build ./...); then
-  else
+  if ! (cd "$dir" && go build ./...); then
     failed+=("$name")
   fi
 }
