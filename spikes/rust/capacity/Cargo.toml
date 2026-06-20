@@ -18,7 +18,13 @@ readme = "README.md"
 default = []
 alloc = []
 
+# Empty workspace table: this spike crate is standalone and NOT a member
+# of the root monorepo workspace (which contains 3000+ files including
+# submodules, worktrees, and 50+ sub-repos).
+[workspace]
+
 [lib]
+name = "pheno_capacity"
 path = "src/lib.rs"
 
 # ADR-035A: pheno-capacity is pure math. No deps, no_std compatible,
