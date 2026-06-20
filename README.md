@@ -1,5 +1,7 @@
 # phenotype-gateway
 
+> **ARCHIVED MIRROR (2026-06-20).** H10 absorption closed; the active router work has moved to [HexaKit `crates/phenotype-router/`](https://github.com/KooshaPari/HexaKit/tree/main/crates/phenotype-router). This repo is preserved as the historical H10 anchor record; do not open new work here.
+
 Canonical domain owner for agent API, LLM proxy, enterprise gateway, and router revamp.
 
 **Charter:** [ADR-ECO-014](https://github.com/KooshaPari/phenotype-registry/blob/main/docs/adrs/ADR-ECO-014-phenotype-gateway-charter.md)
